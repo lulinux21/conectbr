@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+
+/* Configs Padrões */
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 12px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.8s;
+  text-transform: capitalize;
+}
+
+.btn-login {
+  width: 120px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 3px solid #ff1616;
+  color: #ff1616;
+}
+
+.btn-login:hover {
+  border: 3px solid #fff;
+  background-color: #ff1616;
+  color: #fff;
+}
+
+.btn-red {
+  background-color: #ff1616;
+  border: 3px solid #ff1616;
+}
+
+.btn-black {
+  border: 3px solid #0d0d0d;
+  background-color: #0d0d0d;
+}
+
+.btn-red:hover {
+  border: 3px solid #0d0d0d;
+}
+
+.btn-black:hover {
+  border: 3px solid #ff1616;
+}
+
+.header {
+  background-color: #0d0d0d;
+}
+
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0d0d;
+}
+
+form input {
+  width: 220px;
+  border: 3px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  color: #000;
+}
+
+.chamada-lista {
+  height: 520px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.chamada-text h1 {
+  max-width: 580px;
+  width: 100%;
+  font-size: 3.2em;
+  margin-bottom: 20px;
+}
+
+.chamada-paragraph {
+  max-width: 580px;
+  width: 100%;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.chamada-image-text {
+  width: 550px;
+  height: 480px;
+  background-image: URL("./../img/banner-conectbr.png");
+}
+
+/* Linguagens */
+.linguagens,
+.teams {
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.linguagens ul,
+.teams ul {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px 20px 20px;
+  max-width: 1200 px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linguagens ul li a img {
+  max-width: 320px;
+  width: 100%;
+}
+.title-lang,
+.title-teams {
+  margin: 20px auto;
+}
+.title-lang::after,
+.title-teams::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 60px;
+  margin: 5px auto;
+  background-color: #000;
+}
+
+.teams-lista {
+  background-color: #f9f9f9;
+}
+
+.teams ul li a img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.rodape {
+  color: #fff;
+  background-color: #0d0d0d;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.rodape-lista {
+  flex-direction: column;
+}
+
+.rodape-lista ul {
+  display: flex;
+}
+
+.rodape-lista ul li a {
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.rodape-lista ul li a:hover {
+  color: #ff1616;
+}
+
+.rodape-paragraph {
+  margin: 40px 0;
+  font-weight: bold;
+}
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) {
+  /* estilos aqui */
+  .header {
+    max-width: 480px;
+  }
+  .box-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d0d0d;
+  }
+
+  img.logo {
+    max-width: 320px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  form input {
+    width: 320px;
+    margin-bottom: 10px;
+  }
+
+  .btn-login {
+    width: 320px;
+  }
+
+  .chamada-lista {
+    height: 620px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .chamada-text h1 {
+    max-width: 480px;
+    width: 100%;
+    font-size: 2.4em;
+    margin-bottom: 20px;
+  }
+
+  .chamada-paragraph {
+    max-width: 480px;
+    width: 100%;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .chamada-image-text {
+    display: none;
+  }
+
+  /* Linguagens */
+  .linguagens,
+  .teams {
+    flex-direction: ;
+    padding-bottom: 80px;
+  }
+
+  .linguagens ul,
+  .teams ul {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+    max-width: 1200 px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .linguagens ul li a img {
+    max-width: 320px;
+    width: 100%;
+  }
+  .title-lang,
+  .title-teams {
+    margin: 20px auto;
+  }
+  .title-lang::after,
+  .title-teams::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 60px;
+    margin: 5px auto;
+    background-color: #000;
+  }
+
+  .teams-lista {
+    background-color: #f9f9f9;
+  }
+
+  .teams ul li a img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .rodape {
+    color: #fff;
+    background-color: #0d0d0d;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .rodape-lista {
+    flex-direction: column;
+  }
+
+  .rodape-lista ul {
+    display: flex;
+  }
+
+  .rodape-lista ul li a {
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  .rodape-lista ul li a:hover {
+    color: #ff1616;
+  }
+
+  .rodape-paragraph {
+    margin: 40px 0;
+    font-weight: bold;
+  }
+}
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+  /* estilos aqui */
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* estilos aqui */
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+  /* estilos aqui */
+}
