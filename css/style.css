@@ -160,6 +160,12 @@ form input {
   border-radius: 50%;
 }
 
+.teams .people-name {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+}
+
 .rodape {
   color: #fff;
   background-color: #0d0d0d;
@@ -290,8 +296,6 @@ form input {
   .teams ul {
     flex-direction: column;
     border: 1px solid #ff1616;
-    max-width: 420px;
-    width: 100%;
   }
 
   .linguagens ul li a img {
@@ -324,11 +328,14 @@ form input {
 
   .rodape-lista {
     flex-direction: column;
+    border: 1px solid #ff1616;
   }
 
   .rodape-lista ul {
     display: flex;
     flex-direction: column;
+    border: 1px solid #ff1616;
+    width: 100%;
   }
 
   .rodape-lista ul li a {
