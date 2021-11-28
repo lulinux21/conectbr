@@ -290,6 +290,8 @@ form input {
   .teams ul {
     flex-direction: column;
     border: 1px solid #ff1616;
+    max-width: 420px;
+    width: 100%;
   }
 
   .linguagens ul li a img {
