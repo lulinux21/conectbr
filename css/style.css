@@ -192,55 +192,87 @@ form input {
 /* Telefones em paisagem e abaixo */
 @media (max-width: 480px) {
   /* estilos aqui */
-  .header {
-    max-width: 480px;
+  /* Configs Padrões */
+  img.logo {
+    width: 300px;
   }
-  .box-header {
+  .container {
     display: flex;
-    flex-direction: column;
+    max-width: 480px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
     justify-content: space-between;
     align-items: center;
-    background-color: #0d0d0d;
   }
 
-  img.logo {
-    max-width: 320px;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-  }
-
-  form input {
-    width: 320px;
-    margin-bottom: 10px;
+  .btn {
+    padding: 10px 12px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.8s;
+    text-transform: capitalize;
   }
 
   .btn-login {
-    width: 320px;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #ff1616;
+    border: 3px solid #fff;
+  }
+
+  .btn-red {
+    width: 100%;
+    margin: 10px 0;
+    background-color: #ff1616;
+    border: 3px solid #ff1616;
+  }
+
+  .btn-black {
+    width: 100%;
+    margin: 5px 0;
+    border: 3px solid #0d0d0d;
+    background-color: #0d0d0d;
+  }
+
+  .header {
+    background-color: #0d0d0d;
+  }
+
+  .box-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .form {
+    flex-direction: column;
+  }
+  form input {
+    display: block;
+    width: 300px;
+    margin: 3px auto;
   }
 
   .chamada-lista {
-    height: 620px;
     padding: 20px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
+    border: 1px solid #ff1616;
   }
 
   .chamada-text h1 {
+    border: 1px solid #ff1616;
     max-width: 480px;
     width: 100%;
-    font-size: 2.4em;
-    margin-bottom: 20px;
+    font-size: 1.9em;
   }
 
   .chamada-paragraph {
     max-width: 480px;
     width: 100%;
-    font-size: 1.8em;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    border: 1px solid #ff1616;
   }
 
   .chamada-image-text {
@@ -250,46 +282,35 @@ form input {
   /* Linguagens */
   .linguagens,
   .teams {
-    flex-direction: ;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
+    border: 1px solid #ff1616;
   }
 
   .linguagens ul,
   .teams ul {
-    display: flex;
-    gap: 20px;
-    padding: 0 20px 20px 20px;
-    max-width: 1200 px;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
+    border: 1px solid #ff1616;
   }
 
   .linguagens ul li a img {
-    max-width: 320px;
+    max-width: 256px;
     width: 100%;
+    border: 1px solid #ff1616;
   }
   .title-lang,
   .title-teams {
     margin: 20px auto;
   }
-  .title-lang::after,
-  .title-teams::after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 60px;
-    margin: 5px auto;
-    background-color: #000;
-  }
 
   .teams-lista {
-    background-color: #f9f9f9;
+    flex-direction: column;
   }
 
   .teams ul li a img {
-    max-width: 320px;
+    max-width: 256px;
     width: 100%;
     border-radius: 50%;
+    border: 1px solid #ff1616;
   }
 
   .rodape {
@@ -305,20 +326,16 @@ form input {
 
   .rodape-lista ul {
     display: flex;
+    flex-direction: column;
   }
 
   .rodape-lista ul li a {
-    padding: 10px 20px;
-    color: #fff;
-  }
-
-  .rodape-lista ul li a:hover {
-    color: #ff1616;
+    display: block;
+    font-weight: 600;
   }
 
   .rodape-paragraph {
-    margin: 40px 0;
-    font-weight: bold;
+    text-align: center;
   }
 }
 
